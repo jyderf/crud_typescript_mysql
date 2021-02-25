@@ -1,0 +1,15 @@
+CREATE DATABASE `usuarios_typescript` /*!40100 COLLATE 'utf8_spanish_ci' */;
+SHOW DATABASES;
+
+use usuarios_typescript;
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  `apellido` varchar(255) NOT NULL,
+  `celular` varchar(255),
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `usuario_id_unique` (`id`)
+)
